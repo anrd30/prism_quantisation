@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+
+# venvs
+venv/
+.env/
+
+# Output videos / depth maps
+*.mp4
+*.avi
+*.mov
+*.png
+*.jpg
+outputs*/
+output*/
+outputs/
+output/
+
+Video-Depth-Anything/
+
+
+# VDA weights
+checkpoints/
+*.pth
+*.pt
+*.npz
+*.exr
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
