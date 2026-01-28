@@ -15,20 +15,13 @@ This repository contains scripts to quantize the [Video-Depth-Anything](https://
 Comparison of FP32 Baseline vs INT8 Quantized Model (266x266 resolution).
 The quantized model achieves **0.998 correlation** with the baseline.
 
-<table width="100%">
-  <tr>
-    <th width="50%">FP32 Baseline</th>
-    <th width="50%">INT8 Quantized (CLE + AdaRound)</th>
-  </tr>
-  <tr>
-    <td>
-      <video src="assets/demo/davis_rollercoaster_fp32.mp4" controls loop autoplay muted playsinline width="100%"></video>
-    </td>
-    <td>
-      <video src="assets/demo/davis_rollercoaster_int8_sim.mp4" controls loop autoplay muted playsinline width="100%"></video>
-    </td>
-  </tr>
-</table>
+
+### FP32 Baseline
+[Watch Video](https://github.com/anrd30/prism_quantisation/raw/main/assets/demo/davis_rollercoaster_fp32.mp4)
+
+### INT8 Quantized (CLE + AdaRound)
+[Watch Video](https://github.com/anrd30/prism_quantisation/raw/main/assets/demo/davis_rollercoaster_int8_sim.mp4)
+
 
 ## Prerequisites
 
