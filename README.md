@@ -21,14 +21,7 @@ The quantized model achieves **0.998 correlation** with the baseline.
 | :---: | :---: |
 | ![FP32](assets/demo/davis_rollercoaster_fp32.gif) | ![INT8](assets/demo/davis_rollercoaster_int8_sim.gif) |
 
-## Mobile Performance Stats (Samsung NPU)
-Target usage: On-device Video Portrait Mode.
 
-| Metric | Improvement | Value (Est.) |
-| :--- | :--- | :--- |
-| **Storage** | **4x Smaller** | 85MB → 21MB |
-| **Battery** | **4x Less DRAM** | Efficient Bandwidth |
-| **Speed** | **Real-time** | 60+ FPS on NPU |
 
 
 
@@ -52,6 +45,8 @@ All essential scripts are located in the `scripts/` directory:
 | `scripts/benchmark_accuracy.py` | Compares the accuracy and speed of the quantized model vs the FP32 original. |
 | `scripts/quantizable_attention.py` | Contains the `QuantizableAttention` class definition (the core fix). |
 | `scripts/prepare_model_for_quantization.py` | Helper utility to replace attention layers in the VDA model. |
+| `scripts/check_quantization.py` | Verification tool to count encodings in the exported artifacts. |
+| `scripts/profile_model.py` | Generates detailed performance trace (`chrome://tracing`) for layer-wise profiling. |
 
 ## Quick Start
 
