@@ -16,11 +16,11 @@ Comparison of FP32 Baseline vs INT8 Quantized Model (266x266 resolution).
 The quantized model achieves **0.998 correlation** with the baseline.
 
 
-### FP32 Baseline
-[Watch Video](https://github.com/anrd30/prism_quantisation/raw/main/assets/demo/davis_rollercoaster_fp32.mp4)
 
-### INT8 Quantized (CLE + AdaRound)
-[Watch Video](https://github.com/anrd30/prism_quantisation/raw/main/assets/demo/davis_rollercoaster_int8_sim.mp4)
+| FP32 Baseline | INT8 Quantized (CLE + AdaRound) |
+| :---: | :---: |
+| ![FP32](assets/demo/davis_rollercoaster_fp32.gif) | ![INT8](assets/demo/davis_rollercoaster_int8_sim.gif) |
+
 
 
 ## Prerequisites
