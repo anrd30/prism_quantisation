@@ -8,6 +8,28 @@ This repository contains scripts to quantize the [Video-Depth-Anything](https://
 - **Auto-Replacement**: Utilities to automatically replace `MemEffAttention` and `CrossAttention` layers in the pre-trained model.
 - **INT8 Export**: Successfully exports INT8 ONNX and PyTorch models with high accuracy.
 
+
+
+## Results Showcase
+
+Comparison of FP32 Baseline vs INT8 Quantized Model (266x266 resolution).
+The quantized model achieves **0.998 correlation** with the baseline.
+
+<table width="100%">
+  <tr>
+    <th width="50%">FP32 Baseline</th>
+    <th width="50%">INT8 Quantized (CLE + AdaRound)</th>
+  </tr>
+  <tr>
+    <td>
+      <video src="assets/demo/davis_rollercoaster_fp32.mp4" controls loop autoplay muted playsinline width="100%"></video>
+    </td>
+    <td>
+      <video src="assets/demo/davis_rollercoaster_int8_sim.mp4" controls loop autoplay muted playsinline width="100%"></video>
+    </td>
+  </tr>
+</table>
+
 ## Prerequisites
 
 1. Install [AIMET](https://github.com/quic/aimet).

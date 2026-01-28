@@ -8,6 +8,7 @@ venv/
 
 # Output videos / depth maps
 *.mp4
+!assets/**/*.mp4
 *.avi
 *.mov
 *.png
