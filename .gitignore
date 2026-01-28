@@ -32,3 +32,8 @@ checkpoints/
 
 # Logs
 *.log
+
+# Installers and Binaries
+*.run
+*.encodings
+*.onnx
